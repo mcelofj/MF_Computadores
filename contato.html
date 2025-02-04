@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./assets/images/mf.ico" type="image/x-icon">
+    <title>MF Computadores - Software Solution</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/images/Logo MF-teste.png">
+    </header>
+    <p class="subtitle">A solução definitiva para seu problema em tecnologia</p>
+    <nav>
+        <a href="index.html" class="botao-link">Início</a>
+        <a href="servicos.html" class="botao-link">Serviços</a>
+        <a href="contato.html" class="botao-link">Contato</a>
+        <a href="admin.html" class="botao-link" target="_blank">Admin</a>
+    </nav>
+    <main>
+
+        <section id="contato"
+            style="padding: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 8px; max-width: 800px; margin: 0px auto;">
+            
+            <form action="contato.php" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <!-- Campo para Nome -->
+                <label for="nome" style="font-size: 16px; font-weight: bold; color: #c2cbd4a2;">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+                    style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+                <!-- Campo para E-mail -->
+                <label for="email" style="font-size: 16px; font-weight: bold; color: #c2cbd4a2; ">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
+                    style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;" required>
+                
+                <!-- Campo para telefone -->
+                <label for="telefone" style="font-size: 16px; font-weight: bold; color: #c2cbd4a2; ">telefone:</label>
+                <input type="telefone" id="telefone" name="telefone" placeholder="Digite o telefone para contato"
+                    style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+                <!-- Campo para Dúvida -->
+                <label for="duvida" style="font-size: 16px; font-weight: bold; color: #c2cbd4a2;">Dúvida:</label>
+                <textarea id="duvida" name="duvida" placeholder="Digite sua dúvida aqui" rows="4"
+                    style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;"
+                    required></textarea>
+
+                <!-- Botão de Enviar -->
+                <button type="submit" class="botao-link"
+                    style="background-color:#c2cbd4a2; color: white; font-size: 16px; padding: 5px; border: none; border-radius: 4px; cursor: pointer; transition: background-color 1.9s;">
+                    Enviar
+                </button>
+                <section class="map-container">
+                    <iframe
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.7870949821495!2d-54.60578982455201!3d-20.39265795580727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e843f972ae31%3A0x3a6c044cb539c339!2sR.%20Capiat%C3%A1%2C%20377%20-%20Parque%20Novos%20Estados%2C%20Campo%20Grande%20-%20MS%2C%2079080-260%2C%20Brasil!5e0!3m2!1sen!2sus!4v1706478430679!5m2!1sen!2sus"
+                    ></iframe>
+                </section>
+                
+            </form>
+            <br>
+            <p style="text-align: center; font-size: 14px; color: #666;">Entre em contato pelo e-mail:
+                <a href="mailto:marcelofrancojunior@gmail.com"
+                    style="color: #3a8be2e7; text-decoration: none;">marcelofrancojunior@gmail.com</a>
+            </p>
+        </section>
+        
+        
+    </main>
+    <a href="https://wa.me/67991632850" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+            class="whatsapp-icon">
+    </a>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

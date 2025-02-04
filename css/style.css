@@ -1,0 +1,545 @@
+/* Estilo geral */
+
+body {
+    background-image: url("10302.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+header {
+    background: transparent;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: #fff;
+    padding: 0px 100px;
+    text-align: start;
+}
+
+header img.logo {
+    width: 50%; 
+    max-width: 200px; 
+    height: auto;
+}
+
+.subtitle {
+    text-align: start; /* Center it for better appearance */
+    padding: 10px;
+    color: rgb(217, 224, 224);
+    font-size: 1.2em;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header img.logo {
+        width: 60%;
+    }
+    
+    .subtitle {
+        font-size: 1em;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header img.logo {
+        width: 70%;
+    }
+    
+    .subtitle {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 0px 350px;
+}
+
+nav {
+    background: rgba(51, 51, 51, 0.034);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 150px);
+    box-sizing: border-box;
+}
+/* a baixo form cadastrar.php */
+
+.form-cont-cadastrar {
+    max-width: 1000px;
+    margin: 50px auto;
+    /* Centraliza o container horizontalmente e dá espaçamento vertical */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.096);
+    /* Fundo levemente opaco para contraste */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    color: #fff;
+    /* Texto branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+}
+
+.form-cadastrar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* Espaçamento entre os campos */
+}
+
+.form-cadastrar label {
+    margin-bottom: 10px;
+    /* Espaço abaixo do label */
+    font-weight: bold;
+    color: #929597e7;
+    /* Deixa os labels com destaque na cor aqua */
+}
+
+.form-cadastrar input,
+.form-cadastrar select,
+.form-cadastrar textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Fundo branco opaco */
+    color: #000;
+    /* Texto preto para contraste */
+}
+
+/* a cima form cadastrar.php */
+
+.form-container {
+    max-width: 380px;
+    margin: 50px auto;
+    /* Centraliza o container horizontalmente e dá espaçamento vertical */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.096);
+    /* Fundo levemente opaco para contraste */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    color: #fff;
+    /* Texto branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* Espaçamento entre os campos */
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    /* Espaço abaixo do label */
+    font-weight: bold;
+    color: #929597e7;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Fundo branco opaco */
+    color: #000;
+    /* Texto preto para contraste */
+}
+
+.imagem-responsiva {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    /* Assegura que as imagens fiquem visíveis */
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    /* Aumenta levemente ao passar o mouse */
+}
+
+/* slider */
+.slider-container {
+    display: flex;
+    justify-content: center; /* Ensure it stays centered */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Give it spacing but keep centered */
+    padding: 10px; /* Prevent content from touching edges */
+}
+
+.slider-track {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Default: Cards are horizontal */
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff96;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {    
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-buttons button {
+    background-color: #ffffff00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.slider-buttons .prev-btn {
+    position: absolute;
+    left: 10px;
+}
+
+.slider-buttons .next-btn {
+    position: absolute;
+    right: 10px;
+}
+
+.slider-buttons button:hover {
+    background-color: #dddddd00;
+}
+
+.slider-buttons button:active {
+    transform: scale(0.9);
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    .slider-track {
+        flex-direction: column; /* Stack cards */
+        align-items: center; /* Center cards */
+    }
+
+    .card {
+        width: 80%; /* Adjust width for better display */
+        height: 350px;
+    }
+}
+
+/* celular */
+
+@media (max-width: 480px) {
+    .slider-track {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; 
+        height: auto;
+    }
+
+    .card img {
+        height: auto;
+    }
+}
+.slider-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-buttons button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.slider-buttons button:hover {
+    color: #dddddd;
+}
+/* slider final */
+
+.botao-link {
+    display: inline-block;
+    padding: 1% 1%;
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: #c2cbd4a2;
+    /* Azul */
+    border: none;
+    border-radius: 20%;
+    text-align: center;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0.5em;
+    padding: 0 1.5em;
+    border: 1px solid rgba(211, 211, 211, 1);
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    font: normal normal bold 1em/2em Arial, Helvetica, sans-serif;
+    color: rgba(114, 114, 114, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: nowrap;
+    background: rgba(234, 234, 234, 1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8), 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8), 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+.botao-link:hover {
+    cursor: pointer;
+    border: 2px solid rgba(178, 178, 178, 1);
+    color: rgba(76, 76, 76, 1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+}
+
+.botao-link:active {
+    position: relative;
+    cursor: default;
+    top: 1px;
+    border: 1px solid rgba(211, 211, 211, 1);
+    color: rgba(114, 114, 114, 1);
+    background: rgba(247, 247, 247, 1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039) inset;
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039) inset;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.botao-admin {
+    display: inline-block;
+    padding: 1% 1%;
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: #c2cbd4a2;
+    /* Azul */
+    border: none;
+    border-radius: 20%;
+    text-align: center;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0.5em;
+    padding: 0 1.5em;
+    border: 1px solid rgba(211, 211, 211, 1);
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    font: normal normal bold 1em/2em Arial, Helvetica, sans-serif;
+    color: rgba(114, 114, 114, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: nowrap;
+    background: rgba(234, 234, 234, 1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8), 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8), 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+.botao-admin:hover {
+    cursor: pointer;
+    border: 2px solid rgba(178, 178, 178, 1);
+    color: rgba(76, 76, 76, 1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039);
+}
+
+.botao-admin:active {
+    position: relative;
+    cursor: default;
+    top: 1px;
+    border: 1px solid rgba(211, 211, 211, 1);
+    color: rgba(114, 114, 114, 1);
+    background: rgba(247, 247, 247, 1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039) inset;
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 0 rgba(0, 0, 0, 0.298039) inset;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+
+/* mapa */
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* mapa */
+
+/* visualizar_editar.php */
+
+.search-container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-container input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.search-container button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(243, 12, 12, 0.1);
+}
+
+td {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 5px solid #0bc20565;
+    border-style: solid;
+    border-color: #0bc20565;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #45a049;
+    border-style: solid;
+}
+tr:hover {
+    background-color: #beb6b6;
+}
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* botar pag admin acessar, logout pesquisar*/
+button[type="submit"]:hover {
+    background-color:rgb(202, 201, 201);
+    
+}
+
+.no-data {
+    text-align: center;
+    padding: 15px;
+    color: #fc0a0a;
+}
+
+/* visualizar_editar.php */
+
+
+
+

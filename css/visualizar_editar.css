@@ -1,0 +1,282 @@
+/* Modern CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("10302.jpg");
+    background-size: cover;
+    color: #2d3436;
+    line-height: 1.6;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+h2 {
+    color: #8a8991;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Search Container */
+.search-container {
+    background: rgba(255, 255, 255, 0.205);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.search-container form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-container input[type="text"] {
+    padding: 12px 20px;
+    border: 2px solid #646262;
+    border-radius: 8px;
+    font-size: 15px;
+    min-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #535255;
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+button, .pesquisar {
+    background: #525153;
+    color: white;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.2);
+}
+
+.search {
+    padding: 16px 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: medium;
+}
+
+.search:focus {
+    padding: 16px 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: medium;
+    border-color: #7e7d80;
+    box-shadow: 0 0 0 3px rgba(231, 170, 0, 0.1);
+    outline: none;
+}
+
+button, .botao-link {
+    background: #3e3e3f;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.2);
+}
+
+button:hover, .botao-link:hover {
+    background: #e7e7e9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3);
+}
+
+button[name="update"] {
+    background: #1e1f1f;
+    box-shadow: 0 4px 15px rgba(111, 112, 112, 0.2);
+}
+
+button[name="update"]:hover {
+    background: #1f1e1e;
+    box-shadow: 0 6px 20px rgba(115, 116, 115, 0.3);
+}
+
+button[name='delete'] {
+    background-color: #201f1f;
+    color: white;
+    border: none;
+    padding: 10px 33px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    border-radius: 8px;
+}
+
+button[name='delete']:hover {
+    background-color: #413f3f7a;
+}
+
+table {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+thead {
+    background: #373738;
+    color: white;
+}
+
+th {
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #3d3d3d38;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #7e7d80;
+    box-shadow: 0 0 0 3px rgba(240, 239, 238, 0.1);
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#mensagem {
+    background: #858686;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px 0;
+    animation: slideIn 0.5s ease forwards, fadeOut 10s forwards;
+    box-shadow: 0 4px 15px rgba(92, 92, 92, 0.2);
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-container form {
+        justify-content: center;
+    }
+    
+    button, .botao-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Custom Input Sizes */
+input[name="cepCliente"] {
+    width: 120px !important;
+}
+
+input[name="numero"] {
+    width: 80px !important;
+}
+
+input[name="telefoneCliente"] {
+    width: 140px !important;
+}
+
+/* No Data Message */
+.no-data {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Logout Button */
+button[name="logout"] {
+    background: #666363;
+    box-shadow: 0 4px 15px rgba(255, 118, 117, 0.2);
+}
+
+button[name="logout"]:hover {
+    background: #474545;
+    box-shadow: 0 6px 20px rgba(255, 118, 117, 0.3);
+}
